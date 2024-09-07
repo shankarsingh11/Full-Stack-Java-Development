@@ -1,5 +1,6 @@
 package OOPs.abstraction;
 
+// Not 100% abstraction possible only possible in interface
 abstract class Plane
 {
 	abstract public void takeOff();
