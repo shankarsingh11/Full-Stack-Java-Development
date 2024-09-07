@@ -7,11 +7,12 @@ class Plane
 		System.out.println("Plane is taking off");
 	}
 	
-	public  void landing()
-	{
-		 System.out.println("Plane is landing ");
+	public void landing() {
+		
+	 System.out.println("Plane is landing ");
+	 
 	}
-	
+
 	public void fly()
 	{
 		System.out.println("Plane if flying");
@@ -45,7 +46,9 @@ class FighterPlane extends Plane
 class Airport
 {
 	public void permit(Plane plane) // Plane type reference variable 
-	{  // runtime polymorphism 
+	
+	{  
+		// runtime polymorphism 
 		
 	   plane.takeOff();
 	   plane.landing();
