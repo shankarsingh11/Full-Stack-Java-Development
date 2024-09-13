@@ -21,7 +21,7 @@ class A1
 	{
 		public void dep()
 		{
-			System.out.println("in development");
+			System.out.println("Development");
 		}
 		
 		
