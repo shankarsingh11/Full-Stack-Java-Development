@@ -3,22 +3,24 @@ package Projects;
 import java.util.*;
 
 class Guesser{
-	
 	int guessNum;
-	int guessValidNum;
+	 int guessValidNum;
 	
 	int guessNum(){
-		Scanner scan = new Scanner(System.in);
-		System.out.println("Guesser Kindly  guess the number");
-	     guessNum = scan.nextInt();
+		Random random = new Random();
+		System.out.println("Welcome to the world of guessing number game:");
+		guessNum = random.nextInt(100);
+	//	System.out.println(guessNum);
+	  //guessNum = scan.nextInt();
 	    return guessNum;
 	     
 	}
 }
 
 class Player{
-       int guessNum;
-       int guessValidNum;
+	   
+        int guessNum;
+        int guessValidNum;
 	    int guessNum(){
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Player kindly   guess number ");
@@ -29,19 +31,24 @@ class Player{
 }
 
 class Umpire{
+	
 	int numFromGuesser;
 	int numFromPlayer1;
 	int numFromPlayer2;
 	int numFromPlayer3;
+	
 	void collectNumFromGuesser() {
 		Guesser g = new Guesser();
 		numFromGuesser = g.guessNum();
 		
 	}
+	
 	void collectNumFromPlayers() {	
+		
 		Player p1 = new Player();
 		Player p2 = new Player();
 		Player p3 = new Player();
+		
 		numFromPlayer1 = p1.guessNum();
 		numFromPlayer2 = p2.guessNum();
 		numFromPlayer3 = p3.guessNum();
@@ -49,13 +56,13 @@ class Umpire{
 	
 	void compare() {
 		
-		if(numFromGuesser > 0 && numFromGuesser <= 20) {
+		if(numFromGuesser>0) {
 			
-			if(numFromPlayer1 > 0 && numFromPlayer1 <= 20) {
+			if(numFromPlayer1 > 0 && numFromPlayer1 <= 100) {
 				
-				 if(numFromPlayer2 > 0 && numFromPlayer2 <= 20) {
+				 if(numFromPlayer2 > 0 && numFromPlayer2 <= 100) {
 					 
-					 if( numFromPlayer3 > 0 && numFromPlayer3 <= 20) {
+					 if( numFromPlayer3 > 0 && numFromPlayer3 <= 100) {
 						 
 						 if(numFromGuesser == numFromPlayer1) {
 							 
