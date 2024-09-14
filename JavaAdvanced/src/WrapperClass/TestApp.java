@@ -1,6 +1,6 @@
 package WrapperClass;
-
-public class TestApp {
+ 
+public  final class TestApp {
 	int n = 10;
 	public TestApp(int n) {
 		super();
