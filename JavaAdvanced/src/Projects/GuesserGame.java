@@ -9,8 +9,8 @@ class Guesser{
 	int guessNum(){
 		Random random = new Random();
 		System.out.println("Welcome to the world of guessing number game:");
-		guessNum = random.nextInt(100);
-	//	System.out.println(guessNum);
+		guessNum = random.nextInt(10000);
+		System.out.println(guessNum);
 	  //guessNum = scan.nextInt();
 	    return guessNum;
 	     
