@@ -25,6 +25,7 @@ public class ClassTest {
 		
 		// Take the input of the className for which object has to be created at the rumtime
 		String className = args[0];
+		
 		// load the class file explicitly
 		Class c = Class.forName(className);
 		
