@@ -1,6 +1,5 @@
 package WrapperClass;
 
-
 class Student
 {
    static
