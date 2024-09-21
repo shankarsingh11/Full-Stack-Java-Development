@@ -28,7 +28,9 @@ interface LambdaDemo3
 // right side if implementation or body has a one statement the {} is optional
 //left side if parameter is single then () and data of type both optional
 //right side in body if its single line implementation then return statement is also optional
-
+// {} is mandatory if there are more than then one statement and 
+// also if there is return statement explicitly used by developer
+ 
 public class LaunchLambda2 {
 
 	public static void main(String[] args) {
