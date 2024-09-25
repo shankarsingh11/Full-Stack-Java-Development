@@ -34,7 +34,7 @@ class Umpire{
 	
 	int numFromGuesser;
 	int numFromPlayer1;
-	int numFromPlayer2;
+	int numFromPlayer2;   
 	int numFromPlayer3;
 	
 	void collectNumFromGuesser() {
