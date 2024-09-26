@@ -19,8 +19,13 @@ class Alpha1
 		    }
 		    catch(ArithmeticException ae) {
 			System.out.println("Exception handle in alpha1 only ");
+			throw ae;
 		    }
-		    System.out.println("Connection is terminated");
+		    finally
+		    {
+		    	 System.out.println("Connection is terminated");
+		    }
+		   
 	   }	
 }
 
@@ -35,7 +40,7 @@ public class ExcepExm6 {
 		}
 		catch(ArithmeticException ae)
 		{
-		System.out.println("Connection terminated in main");
+		System.out.println("Exception handle in main");
 		}
 		
 	}
