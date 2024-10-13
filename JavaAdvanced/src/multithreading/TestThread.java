@@ -21,13 +21,10 @@ class Thread
 
 class MyThread extends Thread
 {
-	
-	
 	// task for userdefine thread
      @Override
      public void run() 
-  {
-    	 
+  {	 
 	for(int i = 0;i<10;i++)
 	{
 		System.out.println("child Thread");
@@ -41,8 +38,11 @@ public class TestThread {
 	public static void main(String[] args) {
 		
 		MyThread t = new MyThread();// thread instantiation
-// this line will create a new thread which is responsible for execute to run()	
-		 t.start();// starting a thread 
+		//t.run(); // it work as main thread (normal execution)
+		
+ // this line will create a new thread which is responsible for execute to run()	
+	    t.start();// starting a thread 
+		
 		
 //2 thread started and eagerly waiting for cpu time,scheduling done by ThreadScheduler(T.S)	
 		 
