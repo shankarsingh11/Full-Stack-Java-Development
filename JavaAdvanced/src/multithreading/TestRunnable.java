@@ -24,7 +24,7 @@ class Thread implements Runnable
 }
 */
 
-class MyThread extends Thread
+class MyRunnable implements Runnable
 {
 	// task for userdefine thread
      @Override
@@ -38,19 +38,17 @@ class MyThread extends Thread
    
 }
 
-public class TestThread {
+public class TestRunnable {
 
 	public static void main(String[] args) {
 		
-     	MyThread t = new MyThread();// thread instantiation
-	   
-		//t.run(); // it work as main thread (normal execution)
-		
- // this line will create a new thread which is responsible for execute to run()	
-	    t.start();// starting a thread 
-		
-		
-//2 thread started and eagerly waiting for cpu time,scheduling done by ThreadScheduler(T.S)	
+     		  MyRunnable r = new MyRunnable();
+     			
+     		  Thread t = new Thread(r);
+     		  
+     		    t.start();// starting a thread 
+     		  
+           // 2 Thread , main thread and userdefined thread		
 		 
 		 // task for main thread
 		for(int i = 0;i<10;i++)
