@@ -43,11 +43,11 @@ public class TestRunnable {
 	public static void main(String[] args) {
 		
      		  MyRunnable r = new MyRunnable();
-     			
+     		  
      		  Thread t = new Thread(r);
      		  
-     		    t.start();// starting a thread 
-     		  
+     		  t.start();
+     		  		  
            // 2 Thread , main thread and userdefined thread		
 		 
 		 // task for main thread
