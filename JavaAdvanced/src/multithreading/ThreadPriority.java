@@ -5,7 +5,8 @@ class MyThread6 extends Thread
 	@Override
    public void run()
    {
-		Thread.yield();
+		
+		// Thread.yield();
 	   System.out.println("Priority of child thread :: " + Thread.currentThread().getPriority());
 	   
 	   for(int i = 1;i<=5;i++)
