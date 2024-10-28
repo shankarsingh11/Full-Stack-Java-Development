@@ -7,7 +7,7 @@ package multithreading;
  * }
  * 
 class Thread implements Runnable
-{
+{s
 // Heart of MultiThreading
   
    public void start()

@@ -52,7 +52,7 @@ public class TestRunnable {
            // 2 Thread , main thread and userdefined thread		
 		 
 		 // task for main thread
-		for(int i = 0;i<10;i++)
+		for(int i =0;i<10;i++)
 		{
            System.out.println("main Thread");
 		}
