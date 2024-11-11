@@ -8,13 +8,13 @@ class MyThread10 extends Thread
 	  try {
 	  for(int i = 0;i<5;i++)
 	  {
-		  System.out.println("I am a sleeping : " + i);
+		  System.out.println("I am a sleeping thread : " + i);
 		  Thread.sleep(2000);  
 	  }
 	  
-	} catch(InterruptedException e)
+	} catch(InterruptedException e) // Exception e
 	  {
-		System.out.println("I am interrupted ");
+		System.out.println("I got interrupted ");
 	  }
   }
   
@@ -29,9 +29,8 @@ public class ThreadInterrupted {
 		 t.start();
 		 t.interrupt();
 		 
-		 for(int i = 0;i<5;i++) {
 		 System.out.println("end of main thread : ");
-		 }
+		 
 	}
 
 }
