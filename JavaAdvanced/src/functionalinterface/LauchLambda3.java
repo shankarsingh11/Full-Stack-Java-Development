@@ -1,6 +1,6 @@
 package functionalinterface;
 
-// WAP to Compute length of String
+//WAP to Compute length of String
 
 @FunctionalInterface
 interface CLS
@@ -12,11 +12,12 @@ interface CLS
 
 //class LOS
 //{
-//  public int getLength(String str) {
+//    public int getLength(String str) {
 //	  int rs = str.length();
 //	  return rs;
 //  }	
 //}
+
 
 public class LauchLambda3 {
 
@@ -38,7 +39,7 @@ public class LauchLambda3 {
 //	System.out.println(cls.getLength("ineuron ai"));//10
 	
 		
-      // 3Approach
+      // 3Approach 
 		
 		CLS cls = str->str.length();
 		System.out.println(cls.getLength("ineuron ai"));

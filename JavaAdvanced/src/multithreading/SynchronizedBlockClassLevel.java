@@ -4,6 +4,10 @@ class Display8
 {
    public void wish(String name)
    {  
+	   ;;;;;;;;;//1-lakh lines of code
+	   
+	  // lock of class level,so only thread can access this region as it is critical
+	   
 	     synchronized(Display8.class) {
 	    	 System.out.println("Thread which is getting a lock is : " + Thread.currentThread().getName());
 	    	 for(int i = 1;i<=5;i++) {
@@ -19,6 +23,8 @@ class Display8
 	     }
 	     
 	     System.out.println("Thread which is releasing a lock is : " + Thread.currentThread().getName());
+	     
+	     ;;;;;;;;;// 1-lakh lines of code 
    }
 }
 
