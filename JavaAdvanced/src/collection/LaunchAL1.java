@@ -22,6 +22,7 @@ public class LaunchAL1 {
 		al2.add(4);
 		al2.add('A');
 		al2.add(45.87);
+		al2.add(45.87);
 		
 		// hetorogeneous type of data is allowed
 		System.out.println(al2);
