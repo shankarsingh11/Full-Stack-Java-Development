@@ -32,6 +32,7 @@ public class LaunchImp3 {
 		
 		System.out.println("Access the data using Iterator");
 		
+		// All collection class use this property
 		Iterator itr1= al1.iterator();
 		// Ascending order
 		while(itr1.hasNext())
@@ -42,6 +43,7 @@ public class LaunchImp3 {
 		
 		System.out.println();
 		
+		// Only ArrayList , LinkedList 
 		// ListIterator is bidirectional
 		ListIterator litr1 = al1.listIterator(al1.size());
 			
