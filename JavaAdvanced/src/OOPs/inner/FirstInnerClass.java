@@ -12,7 +12,7 @@ class A
 		// B b = new B();
 		 
 		 System.out.println("in show  " + num);
-		 b.config(); // this method call only when show method call first
+		 b.config();//this method call only when show method call first
 	 }
 	 
 	 // Inner class 

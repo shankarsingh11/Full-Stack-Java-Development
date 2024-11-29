@@ -42,7 +42,7 @@ interface ISample
 		System.out.println("hey implementation given for m1()");
 	}
 
-   // public abstract void m2();
+    public abstract void m2();
 	
 }
 
@@ -50,7 +50,7 @@ interface ISample
  class SubSampleImpl extends SampleImpl
  {
 	@Override //indication to  compiler that these methods are override method 
-	public void m2() {
+	public  void m2() {
 		System.out.println("hey implementation given for m2()");
 	}
 	 
@@ -60,6 +60,8 @@ interface ISample
 public class TestApp {
 
 	public static void main(String[] args) {
+		
+		
 		
 		// SampleImpl class is not abstract class then 
 		//ISample sample = new  SampleImpl();// loose coupling
