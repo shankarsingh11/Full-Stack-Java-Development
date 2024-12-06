@@ -7,6 +7,7 @@ public class LaunchTS {
 	public static void main(String[] args) {
 		
         TreeSet ts = new TreeSet();
+        
         ts.add(20);
         ts.add(10);
         ts.add(25);
@@ -14,6 +15,7 @@ public class LaunchTS {
         ts.add(30);
         ts.add(50);
         ts.add(15);
+        
         System.out.println(ts);
         System.out.println("***********");
         

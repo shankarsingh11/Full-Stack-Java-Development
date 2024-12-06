@@ -52,6 +52,7 @@ public class LaunchImp2 {
 		System.out.println();
 		System.out.println("Access data in ascending order using ListIterator");
 		// ListIterator is bidirectional
+		
 		ListIterator litr1 = al1.listIterator(al1.size());
 		
 		while(litr1.hasPrevious())

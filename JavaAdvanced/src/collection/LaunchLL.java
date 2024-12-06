@@ -13,7 +13,7 @@ public class LaunchLL {
 //		System.out.println(ll4);// []
 			
 		
-		LinkedList ll1 = new LinkedList();
+		LinkedList ll1 = new LinkedList(); //  store  heterogeneous Types object
 		
 		ll1.add(11);
 		ll1.add("shankar");
