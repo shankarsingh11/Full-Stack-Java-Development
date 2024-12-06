@@ -38,7 +38,7 @@ public String toString()
   
 }
 
-public class LAunchMapsCom {
+public class LaunchMapsCom {
 
 	public static void main(String[] args) {
 	
