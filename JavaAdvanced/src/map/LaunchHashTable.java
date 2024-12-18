@@ -2,6 +2,23 @@ package map;
 
 import java.util.Hashtable;
 
+class Ineuron
+{
+  int i;
+  
+  public Ineuron(int i)
+  {
+	  this.i=i;
+  }
+  
+  @overide
+  public String toString()
+  {
+	  return (i + " ");
+  }
+  
+  
+}
 
 public class LaunchHashTable {
 
@@ -21,13 +38,25 @@ public class LaunchHashTable {
 	// Hashtable - Low performance
 	// HashMap - high performance	
 		
+   // equals() : HashMap
+   //==:IdentityHashMap		
+		
 		
 		Hashtable ht = new Hashtable();
 		
-		ht.put(11, "shankar");
-		ht.put(12, "Nitin");
+		ht.put(12, "shankar");
+		ht.put(11, "Nitin");
 		
 		System.out.println(ht);
+		
+		Hashtable ht2 = new Hashtable();
+		
+		ht2.put(new Ineuron(11), "shankar");
+		ht2.put(new Ineuron(13), "Deepak");
+		ht2.put(new Ineuron(10), "Stuti");
+		
+		System.out.println(ht2);
+		
 		
 		
 		

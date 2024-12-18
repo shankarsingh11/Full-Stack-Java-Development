@@ -28,7 +28,7 @@ class Employee
   
 public class LaunchGC {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		
       Employee e1 = new Employee();
       
@@ -40,16 +40,18 @@ public class LaunchGC {
       WeakHashMap hm = new WeakHashMap();
       
        hm.put(e1, "shankar");
-       
+       System.out.println(hm);
       // statement
       //statement
       
       e1=null;// eligible for garbage collection
 		
       System.gc(); // call to garbage collector (GC)
+      Thread.sleep(4000);
+     System.out.println(hm);
       
-      System.out.println("Last line");
-      
+     
+    
 	}
 
 }
