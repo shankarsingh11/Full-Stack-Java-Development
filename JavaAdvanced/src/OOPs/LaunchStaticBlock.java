@@ -37,6 +37,7 @@ public class LaunchStaticBlock {
 		System.out.println(a);
 	}
 	
+	
   // After static block call main method 
 	public static void main(String[] args) {
 		

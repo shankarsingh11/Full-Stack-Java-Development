@@ -20,7 +20,7 @@ public class StaticControlFlow {
 		System.out.println(b);
 	}
         // second call before static or non static method 
-	public static void main(String[] args) {
+	 public static void main(String[] args) {
 		
 		System.out.println("Main Method ");
 		disp();  // calling without className because method exist in same class other class static method calling using className

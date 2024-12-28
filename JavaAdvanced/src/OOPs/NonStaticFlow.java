@@ -40,7 +40,6 @@ class Demo1{
 public class NonStaticFlow {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		Demo1 s1 = new Demo1();
 		Demo1 s2 = new Demo1(10);

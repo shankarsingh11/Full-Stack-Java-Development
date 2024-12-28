@@ -18,6 +18,11 @@ class DemoClass{
 }
 public class LaunchStaticMethod {
 	
+	
+	static {
+		System.out.println("hello");
+	}
+	
 	static void disp1() {
 		System.out.println("Disp1 is 1 ");
 	}

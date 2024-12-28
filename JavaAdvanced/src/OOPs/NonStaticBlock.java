@@ -10,13 +10,13 @@ public class NonStaticBlock {
 	static int count;  // class variable,  Same  Memory using by all call function
 	
 	int demo() {
-		System.out.println("Non static method ");
+		System.out.println("non  static method ");
 	 count++;
 	 return count;
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
         
 		System.out.println("Main method call ");
 		NonStaticBlock s1 = new NonStaticBlock();
@@ -30,8 +30,8 @@ public class NonStaticBlock {
 		
 		// when count is static variable 
 		System.out.println(s1.demo());//1
-		System.out.println(s2.demo());//1
-		System.out.println(s3.demo());//1
+		System.out.println(s2.demo());//2
+		System.out.println(s3.demo());//3
 		
 		System.out.println("Static variable exist in same classs so access without class name ");
 		System.out.println(count);// access without classname 

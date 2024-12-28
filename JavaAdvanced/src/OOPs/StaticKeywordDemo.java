@@ -1,5 +1,4 @@
 
-
 package OOPs;
 
 
@@ -45,7 +44,7 @@ class Demo{
 	
 	void demo1() {
 		a = 110;
-		b= 300;
+		b = 300;
 		System.out.println("non static method");
 		System.out.println(a);
 		System.out.println(b);
