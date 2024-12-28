@@ -3,6 +3,7 @@ package enums;
 enum Course
 {
    JAVA , JEE , SPRINGBOOT;
+	
 	int courseId;
 	
 	Course()
@@ -31,6 +32,10 @@ public class LaunchEnum3 {
 	Course.JAVA.setcourseId(10);
 	int cid = Course.JAVA.getcourseId();
 	System.out.println(cid);
+	
+	Course.JEE.setcourseId(20);
+	int cid2 = Course.JEE.getcourseId();
+	System.out.println(cid2);
 		
 		
 		

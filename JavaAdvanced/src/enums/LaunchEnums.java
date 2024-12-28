@@ -1,6 +1,7 @@
 package enums;
 
 enum Results{
+	
 	 PASS , FAIL , NR; // static final by default
 	// Fields ==> insatnce variable ==> properties
 	//methods
