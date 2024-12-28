@@ -55,6 +55,8 @@ public class LaunchAnno3 {
 		int g = fp.goals();
 		System.out.println(s);
 		System.out.println(g);
+		
+		
 
 	}
 
